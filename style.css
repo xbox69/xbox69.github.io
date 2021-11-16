@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  background-color: black;
+}
+
+nav{
+  text-align: center;
+}
+
+nav ul{
+  display: inline-block;
+}
+
+nav ul li{
+  list-style-type: none;
+  background-color: black;
+  display: inline;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right-color: white; 
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+
+a:hover{
+  color: red;
+}
+
+.img30x30{
+  height: 30px;
+  width: 30px;
+}
+
+h1, h3{
+  text-align: center;
+}
+
+h1, h2, h3, p{
+  color: #EF3232;
+  font-family: 'Poppins', sans-serif;
+}
+
+.border{
+  font-family: sans-serif;
+}
+
+.chatbutton{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: red;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 6px;
+  outline: none;
+  padding: 20px 20px;
+  margin-top: 30px;
+  margin-left: 400px;
+  height:40px; 
+  width: 160px;
+}
+
+.chatbutton:hover{
+  background: red; 
+  color: white;
+}
+
+.gamesbutton{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: red;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 6px;
+  outline: none;
+  padding: 20px 20px;
+  margin-top: 30px;
+  margin-left: 100px;
+  height:40px; 
+  width: 160px;
+}
+
+.gamesbutton:hover{
+  background: red;
+  color: white;
+}
+
+
+.playbox{
+  margin-top: 10px;
+}
+
+.playtext{
+  position: relative;
+  bottom: 20px;
+}
+
+.meme{
+  margin-left: 500px;
+  height: 300px;
+  width: 350px;
+  
+}
+
+.footertext{
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 300px;
+}
