@@ -14,20 +14,20 @@ nav ul{
 
 nav ul li{
   list-style-type: none;
-  background-color: black;
   display: inline;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
-  border-right-color: white; 
+  border-right-color: white;
+  font-size: 20px;
+  font-weight: bold; 
+  color: white;
+  background-color: black;
 }
 
 a{
+  display: inline;
   text-decoration: none;
   color: white;
-  display: inline;
 }
 
 a:hover{
@@ -43,69 +43,47 @@ h1, h3{
   text-align: center;
 }
 
-h1, h2, h3, p{
-  color: #EF3232;
+h1, h3, p{
   font-family: 'Poppins', sans-serif;
+  color: #EF3232;
+}
+
+button{
+  display: inline-block;
+  position: relative;
+  padding: 20px 20px;
+  border-radius: 6px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: red;
+  background-color: black;
 }
 
 .border{
   font-family: sans-serif;
 }
 
-.chatbutton{
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: red;
-  font-size: 20px;
-  font-weight: 900;
-  background-color: black;
-  border-radius: 6px;
-  outline: none;
-  padding: 20px 20px;
+.titlebutton{
   margin-top: 30px;
   margin-left: 400px;
-  height:40px; 
-  width: 160px;
-}
-
-.chatbutton:hover{
-  background: red; 
-  color: white;
-}
-
-.gamesbutton{
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: red;
   font-size: 20px;
   font-weight: 900;
-  background-color: black;
-  border-radius: 6px;
-  outline: none;
-  padding: 20px 20px;
-  margin-top: 30px;
-  margin-left: 100px;
   height:40px; 
   width: 160px;
 }
 
-.gamesbutton:hover{
-  background: red;
-  color: white;
+.titlebutton:hover{
+  color: #fff;
+  background: red; 
 }
 
-
-.playbox{
+.titlebuttonbox{
   margin-top: 10px;
 }
 
-.playtext{
+.titlebuttontext{
   position: relative;
   bottom: 20px;
 }
@@ -118,7 +96,7 @@ h1, h2, h3, p{
 }
 
 .footertext{
-  color: red;
-  font-family: 'Poppins', sans-serif;
   margin-top: 300px;
+  font-family: 'Poppins', sans-serif;
+  color: red;
 }
