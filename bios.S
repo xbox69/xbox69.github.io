@@ -1,4 +1,4 @@
-#define nop andeq r0, r0
+##define nop andeq r0, r0
 
 .text
 
