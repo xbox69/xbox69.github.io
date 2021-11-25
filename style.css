@@ -34,10 +34,6 @@ a:hover{
   color: red;
 }
 
-.img30x30{
-  height: 30px;
-  width: 30px;
-}
 
 h1, h3{
   text-align: center;
@@ -48,7 +44,16 @@ h1, h3, p{
   color: #EF3232;
 }
 
-button{
+.img30x30{
+  height: 30px;
+  width: 30px;
+}
+
+.border{
+  font-family: sans-serif;
+}
+
+.button{
   display: inline-block;
   position: relative;
   padding: 20px 20px;
@@ -61,44 +66,11 @@ button{
   background-color: black;
 }
 
-.border{
-  font-family: sans-serif;
-}
-
-.chatbutton{
-  font-size: 20px;
-  font-weight: 900;
-  margin-top: 30px;
-  margin-left: 400px;
-  height:40px; 
-  width: 160px;
-}
-
-.chatbutton:hover{
-  color: white;
-  background: red; 
-}
-
-.gamesbutton{
-  font-size: 20px;
-  font-weight: 900;
-  margin-top: 30px;
-  margin-left: 100px;
-  height:40px; 
-  width: 160px;
-}
-
-.gamesbutton:hover{
-  background: red;
-  color: white;
-}
-
-
-.playbox{
+.buttonbox{
   margin-top: 10px;
 }
 
-.playtext{
+.buttontext{
   position: relative;
   bottom: 20px;
 }
@@ -114,4 +86,60 @@ button{
   margin-top: 300px;
   font-family: 'Poppins', sans-serif;
   color: red;
+}
+
+#chatbutton{
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: 400px;
+  height:40px; 
+  width: 160px;
+}
+
+#chatbutton:hover{
+  color: white;
+  background: red; 
+}
+
+#gamesbutton{
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: 100px;
+  height:40px; 
+  width: 160px;
+}
+
+#gamesbutton:hover{
+  background: red;
+  color: white;
+}
+
+#gamedownloadbutton{
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: 400px;
+  height:40px; 
+  width: 160px;
+}
+
+#gamedownloadbutton:hover{
+  color: white;
+  background: red; 
+}
+
+#launcherbutton{
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: 100px;
+  height:40px; 
+  width: 160px;
+}
+
+#launcherbutton:hover{
+  background: red;
+  color: white;
 }
