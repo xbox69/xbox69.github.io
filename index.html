@@ -16,7 +16,7 @@ body {
 }
 
 .box {
-	border-radius: 3px;
+	border-radius: 6px;
 	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
 }
 
@@ -47,17 +47,17 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
+   color: #000;
    text-align: center;
 }
 
 ::-moz-placeholder {
-   color: #955;
+	color: #000;
    text-align: center;
 }
 
 :-ms-input-placeholder {
-   color: #955;
+	color: #000;
    text-align: center;
 }
 
@@ -69,9 +69,9 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Password" /> <br />
+					<button style="border-radius: 6px;" id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">Wrong Password</p>
 				</div>
 			</div>
 		</div>
