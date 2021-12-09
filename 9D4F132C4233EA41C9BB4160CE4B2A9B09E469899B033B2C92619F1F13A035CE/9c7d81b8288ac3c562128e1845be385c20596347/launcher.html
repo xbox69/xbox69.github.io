@@ -316,63 +316,25 @@ Thanks for looking at this website's source code! Star it on GitHub if you like 
     <canvas id="screen" width="720" height="480"></canvas>
     <section id="controls">
       <div id="preload">
-        <button
-          class="bigbutton"
-          id="select"
-          onclick="document.getElementById('loader').click()"
-        >
-          Open Game ROM
-        </button>
-        <input
-          id="loader"
-          type="file"
-          accept=".gba"
-          onchange="run(this.files[0]);"
-        />
-        <button onclick="document.getElementById('saveloader').click()">
-          Upload Savegame
-        </button>
-        <input
-          id="saveloader"
-          type="file"
-          onchange="uploadSavedataPending(this.files[0]);"
-        />
+        <button class="bigbutton" id="select" onclick="document.getElementById('loader').click()">Open Game ROM</button>
+        <input id="loader" type="file" accept=".gba" onchange="run(this.files[0]);">
+        <button onclick="document.getElementById('saveloader').click()">Upload Savegame</button>
+        <input id="saveloader" type="file" onchange="uploadSavedataPending(this.files[0]);">
       </div>
       <div id="ingame" class="hidden">
-        <button id="pause" class="bigbutton" onclick="togglePause()">
-          Pause
-        </button>
+        <button id="pause" class="bigbutton" onclick="togglePause()">Pause</button>
         <button class="bigbutton" onclick="reset()">RESET</button>
         <button onclick="gba.downloadSavedata()">Download Savegame</button>
         <div id="sound">
-          <input
-            type="checkbox"
-            checked
-            onchange="gba.audio.masterEnable = this.checked"
-          />
+          <input type="checkbox" checked onchange="gba.audio.masterEnable = this.checked">
           <p>Sound</p>
-          <input
-            type="range"
-            min="0"
-            max="1"
-            value="1"
-            step="any"
-            onchange="setVolume(this.value)"
-            oninput="setVolume(this.value)"
-          />
+          <input type="range" min="0" max="1" value="1" step="any" onchange="setVolume(this.value)" oninput="setVolume(this.value)">
+        </div>
+      </div>
     </section>
     <ul id="links">
-      <li>
-        <a href="https://github.com/Xrox360/xbox360.github.io"
-          >Fork me on Github!</a
-        >
-        |
-        <a href="http://github.com/endrift/gbajs/">Fork Jeffrey on GitHub!</a>
-      </li>
+      <li><a href="https://github.com/Xrox360/xbox360.github.io">Fork me on Github!</a> | <a href="http://github.com/endrift/gbajs/">Fork Jeffrey on GitHub!</a></li>
     </ul>
-    <footer>
-      © 2021 <a href="http://github.com/Xrox360">BowTamer (alias)</a> | © 2012 –
-      2013 <a href="http://endrift.com/">Jeffrey Pfau</a>
-    </footer>
+    <footer>© 2021 <a href="http://github.com/Xrox360">BowTamer (alias)</a> | © 2012 – 2013 <a href="http://endrift.com/">Jeffrey Pfau</a></footer>
   </body>
 </html>
