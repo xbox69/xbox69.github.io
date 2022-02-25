@@ -111,7 +111,7 @@ function run(file) {
 	load.textContent = 'Loading...';
 	load.removeAttribute('onclick');
 	var pause = document.getElementById('pause');
-	pause.textContent = "PAUSE";
+	pause.textContent = "Pause";
 	gba.loadRomFromFile(file, function(result) {
 		if (result) {
 			for (var i = 0; i < runCommands.length; ++i) {
@@ -167,14 +167,14 @@ function togglePause() {
 		} else {
 			gba.runStable();
 		}
-		e.textContent = "PAUSE";
+		e.textContent = "Pause";
 	} else {
 		if (debug && debug.gbaCon) {
 			debug.gbaCon.pause();
 		} else {
 			gba.pause();
 		}
-		e.textContent = "UNPAUSE";
+		e.textContent = "Unpause";
 	}
 }
 
