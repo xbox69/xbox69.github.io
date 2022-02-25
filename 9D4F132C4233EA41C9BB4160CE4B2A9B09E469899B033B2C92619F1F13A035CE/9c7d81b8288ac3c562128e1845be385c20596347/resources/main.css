@@ -98,16 +98,13 @@ button {
   margin: 0 0 20px;
 }
 
-label,
-#sound,
-#controls > div > p {
+label, #sound, #controls > div > p {
   display: block;
   margin: 5px 30px;
   height: 18px;
 }
 
-label,
-#sound {
+label, #sound {
   float: left;
   clear: left;
 }
@@ -149,8 +146,7 @@ p:first-child {
   margin-top: 0;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
   color: #fcb3f0;
 }
 
@@ -187,8 +183,7 @@ p {
   margin: 0;
 }
 
-label p,
-#sound p {
+label p, #sound p {
   display: inline;
 }
 
