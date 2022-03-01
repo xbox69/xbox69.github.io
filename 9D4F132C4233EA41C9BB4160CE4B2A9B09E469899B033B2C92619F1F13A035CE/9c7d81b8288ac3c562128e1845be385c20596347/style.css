@@ -156,3 +156,127 @@ h1, h3, p{
   background: red;
   color: white;
 }
+
+#downloads {
+	position: relative;
+}
+
+#pokemonouter {
+	position: relative;
+	margin-left: 83px;
+	padding-top: 10px;
+	height: 100px;
+	width: 1200px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #3466af;
+}
+
+#pokemon {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 80px;
+	width: 1180px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #ffcb05;
+}
+
+#mario {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 83px;
+	height: 400px;
+	width: 200px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #fe0002;
+}
+
+#kirby {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 333px;
+	padding-top: 10px;
+	height: 100px;
+	width: 450px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #d74894;
+}
+
+#footertext {
+	margin-top: 1000px;
+}
+
+#sonic {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 833px;
+	padding-top: 10px;
+	height: 100px;
+	width: 450px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #1a50bc;
+}
+
+#warioouter {
+	position: absolute;
+  margin-top: 210px;
+	margin-left: 333px;
+	padding-top: 10px;
+	height: 230px;
+	width: 200px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #fdd50b;
+}
+
+#wario {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 210px;
+	width: 180px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #78226d;
+}
+
+#fzero {
+	position: absolute;
+  margin-top: 210px;
+	margin-left: 583px;
+	padding-top: 10px;
+	height: 230px;
+	width: 200px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #3637f6;
+}
+
+#dk {
+	position: absolute;
+	margin-top: 210px;
+	margin-left: 833px;
+	padding-top: 10px;
+	height: 90px;
+	width: 450px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #ab4210;
+}
+
+#marioextra {
+	position: absolute;
+  margin-top: 350px;
+	margin-left: 833px;
+	padding-top: 10px;
+	height: 90px;
+	width: 450px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #fe0002;
+}
