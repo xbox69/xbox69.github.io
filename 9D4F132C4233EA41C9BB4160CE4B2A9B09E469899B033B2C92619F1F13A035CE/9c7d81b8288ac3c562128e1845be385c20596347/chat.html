@@ -15,7 +15,9 @@ Thanks for looking at this website's source code! Star it on GitHub if you like 
 
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+    <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
+    <link rel="stylesheet" href="style.css" />
     <title>
       The Boyz Hangout: Chat
     </title>
@@ -44,6 +46,110 @@ Thanks for looking at this website's source code! Star it on GitHub if you like 
         </li>
       </ul>
     </nav>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 13px;
+        display: flex;
+        flex-direction: column;
+        max-height: 1080px;
+        overflow: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #000000;
+      }
+
+      .members-count {
+        color: red;
+      }
+
+      .members-count,
+      .members-list,
+      .messages {
+        border: 1px solid #000000;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      .messages {
+        flex-shrink: 1;
+        overflow: auto;
+        color: red;
+      }
+
+      .message {
+        padding: 5px 0;
+      }
+
+      .message .member {
+        display: inline-block;
+      }
+
+      .member {
+        padding-right: 10px;
+        position: relative;
+      }
+
+      .message-form {
+        display: flex;
+        flex-shrink: 0;
+      }
+
+      .message-form__input {
+        flex-grow: 1;
+        border: 1px solid #dfdfdf;
+        padding: 10px 15px;
+        font-size: 16px;
+        color: red;
+        background-color: #000000;
+      }
+
+      ::placeholder {
+        color: red;
+      }
+
+      .message-form__button {
+        margin: 10px;
+        border: 1px solid #ffffff;
+        color: red;
+        background-color: black;
+      }
+
+      .message-form__button:hover {
+        border: 1px solid #000000;
+        color: #ffffff;
+        background-color: red;
+      }
+
+      #namebackground {
+        position: absolute;
+        margin-top: 270px;
+        padding-top: 10px;
+        height: 500px;
+        width: 1340px;
+        border-radius: 6px;
+        outline: none;
+        background-color: #000000;
+      }
+
+      #name {
+        position: absolute;
+        margin-top: 55px;
+        margin-left: 533px;
+      }
+
+      #startbutton {
+        position: absolute;
+        margin-top: 105px;
+        margin-left: 532px;
+        height: 41px;
+        width: 265px;
+      }
+
+      #sendbutton {
+        height: 30px;
+      }
+    </style>
   </head>
   <body>
     <h1>
@@ -54,9 +160,18 @@ Thanks for looking at this website's source code! Star it on GitHub if you like 
     </h3>
     <h3 class="border"> ______________________________________________________________________________________________________________________________________________________________________________________
     </h3>
-    <h3>
-      <a href="https://docs.google.com/document/d/1jGChCI2SE36zcDAELlfAOkpst5HPpbtTQUIF_-ckvX8/edit?usp=sharing">Chat Link (Linked to a Google Doc)</a>
-    </h3>
+    <div class="members-count">-</div>
+    <div class="members-list">-</div>
+    <div class="messages"></div>
+    <form class="message-form" onsubmit="return false;">
+      <input class="message-form__input" placeholder="Type a message.." type="text" />
+      <input id="sendbutton" class="message-form__button" value="Send" type="submit"  />
+    </form>
+    <div id="namebackground">
+      <input id="name" class="message-form__input" placeholder="Enter your name..." type="text"/>
+      <input id="startbutton" class="message-form__button" value="Enter Chat" type="submit" onclick="startChat(); "/>
+    </div>
+    <script src="./script.js"></script>
     <h4 class="footertext">
       This website was made by BowTamer (yes)
     </h4>
